@@ -1,0 +1,16 @@
+@use '../base/tokens.scss' as *;
+
+@each $font-name, $font-data in $font-component {
+  #pd-#{$font-name}{
+    font-family: $font-family-base;
+    font-size: map-get($font-data, size);
+    font-weight: map-get($font-data, weight);
+    line-height: map-get($font-data, line-height);
+  }
+}
+
+.text-block {
+  @extend #pd-paragraph-md;
+  max-width: 120ch;
+  margin-bottom: 2.5rem;
+}

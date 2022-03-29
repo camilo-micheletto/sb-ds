@@ -1,0 +1,38 @@
+@use '../assets/styles/' as *;
+
+.color {
+  &-container {
+    display: grid;
+    gap: 1ch;
+    margin-bottom: 2ch;
+    color: $color-neutral-darkest;
+    font-family: $font-family-base;
+  }
+  &-title {
+    @extend #pd-heading-xl;
+    text-transform: capitalize;
+  }
+  &-list {
+    display: grid;
+    margin: 0; padding: 0;
+    gap: 2ch;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    &__item {
+      display: inherit;
+      align-content: end;
+      min-height: 200px;
+      background-color: var(--color);
+      border-radius: 0.5rem;
+      box-shadow: 0 3px 15px -7px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+      text-align: center;
+    }
+  }
+  &-subtitle { @extend #pd-heading-md; }
+  &-text { @extend #pd-paragraph-md; }
+  &-info {
+    padding-block: 1ch;
+    width: 100%;
+    background-color: $color-neutral-lightest;
+  }
+}

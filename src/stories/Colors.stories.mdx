@@ -1,0 +1,56 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import ColorSwatches from './ColorSwatches.vue'
+
+<Meta title="Colors" component={ColorSwatches} />
+
+<Canvas>
+  <Story name="Colors">
+    {() => {
+      return {
+        components: { ColorSwatches },
+        template: `
+        <div class="flow">
+          <ColorSwatches>
+              <template #gamefication>
+                <p class="text-block">
+                  Usada em locais que poderia ser a cor primária, mas já existe um CTA primário ou necessita de uma repetição de btns (ex: lista de disciplinas btn com cor secundária, página da disciplina btn com cor primária)
+                </p>
+              </template>
+              <template #bg>
+                <p class="text-block">
+                  Usada em locais que poderia ser a cor primária, mas já existe um CTA primário ou necessita de uma repetição de btns (ex: lista de disciplinas btn com cor secundária, página da disciplina btn com cor primária)
+                </p>
+              </template>
+              <template #grays>
+                <p class="text-block">
+                  Usada em locais que poderia ser a cor primária, mas já existe um CTA primário ou necessita de uma repetição de btns (ex: lista de disciplinas btn com cor secundária, página da disciplina btn com cor primária)
+                </p>
+              </template>
+              <template #content>
+                <p class="text-block">
+                  Usada em locais que poderia ser a cor primária, mas já existe um CTA primário ou necessita de uma repetição de btns (ex: lista de disciplinas btn com cor secundária, página da disciplina btn com cor primária)
+                </p>
+              </template>
+              <template #support>
+                <p class="text-block">
+                  Usada em locais que poderia ser a cor primária, mas já existe um CTA primário ou necessita de uma repetição de btns (ex: lista de disciplinas btn com cor secundária, página da disciplina btn com cor primária)
+                </p>
+              </template>
+              <template #neutral>
+                <p class="text-block">
+                  Usada em locais que poderia ser a cor primária, mas já existe um CTA primário ou necessita de uma repetição de btns (ex: lista de disciplinas btn com cor secundária, página da disciplina btn com cor primária)
+                </p>
+              </template>
+              <template #brand>
+                <p class="text-block">
+                  Color Brand Primary é a cor principal do Passei Direto. Usada em CTA's principais. Importante não existir mais de um CTA com a cor primária em uma mesma página ou scroll.
+                  Usada em locais que poderia ser a cor primária, mas já existe um CTA primário ou necessita de uma repetição de btns (ex: lista de disciplinas btn com cor secundária, página da disciplina btn com cor primária)
+                </p>
+              </template>
+          </ColorSwatches>
+        </div>
+        `,
+      };
+    }}
+  </Story>
+</Canvas>

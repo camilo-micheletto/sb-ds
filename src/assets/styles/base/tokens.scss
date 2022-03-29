@@ -1,0 +1,67 @@
+$font-family-base: 'Source Sans Pro';
+
+$font-size-xxs: 0.813rem;
+$font-size-xs: 0.875rem;
+$font-size-sm: 1rem;
+$font-size-md: 1.125rem;
+$font-size-lg: 1.25rem;
+
+$font-line-height-xxs: 1rem;
+$font-line-height-xs: 1.0625rem;
+$font-line-height-sm: 1.1875rem;
+$font-line-height-md: 1.25rem;
+$font-line-height-lg: 1.4375rem;
+$font-line-height-xl: 1.5625rem;
+$font-line-height-xxl: 1.6875rem;
+
+$font-weight-regular: 400;
+$font-weight-md: 600;
+
+$color-neutral-darkest: rgb(46, 47, 50);
+$color-neutral-lightest: rgb(255, 255, 255);
+
+
+$font-component: (
+  heading-xl: (
+    size: $font-size-lg,
+    weight: $font-weight-md,
+    line-height: $font-line-height-lg
+  ),
+  heading-lg: (
+    size: $font-size-md,
+    weight: $font-weight-md,
+    line-height: $font-line-height-md,
+  ),
+  heading-md: (
+    size: $font-size-sm,
+    weight: $font-weight-md,
+    line-height: $font-line-height-sm
+  ),
+  heading-sm: (
+    size: $font-size-xs,
+    weight: $font-weight-md,
+    line-height: $font-line-height-xs
+  ),
+  subtitle-md: (
+    size: $font-size-xs,
+    weight: $font-weight-regular,
+    line-height: $font-line-height-xs
+  ),
+  paragraph-md: (
+    size: $font-size-sm,
+    weight: $font-weight-regular,
+    line-height: $font-line-height-lg
+  ),
+  paragraph-sm: (
+    size: $font-size-xs,
+    weight: $font-weight-regular,
+    line-height: $font-line-height-md
+  ),
+  caption: (
+    size: $font-size-xxs,
+    weight: $font-weight-regular,
+    line-height: $font-line-height-xxs
+  ),
+);
+
+
