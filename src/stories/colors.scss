@@ -6,7 +6,7 @@
     gap: 1ch;
     margin-bottom: 2ch;
     color: $color-neutral-darkest;
-    font-family: $font-family-base;
+    font-family: quote(font-family-base);
   }
   &-title {
     @extend #pd-heading-xl;
